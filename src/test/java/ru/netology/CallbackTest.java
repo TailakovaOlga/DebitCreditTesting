@@ -16,18 +16,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CallbackTest {
-    private WebDriver driver;
-
-    @BeforeEach
-    void setUp() {
-        driver = new ChromeDriver();
-    }
-
-    @AfterEach
-    void tearDown() {
-        driver.quit();
-        driver = null;
-    }
 
     @Test
     void shouldTestWithValidFirstSurnameSecondName() {
